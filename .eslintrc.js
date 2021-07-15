@@ -19,6 +19,8 @@ module.exports = {
   },
   plugins: ['react'],
   rules: {
+    'no-param-reassign': 'off',
     'react/react-in-jsx-scope': 'off',
+    'react/jsx-props-no-spreading': 'off',
   },
 };
