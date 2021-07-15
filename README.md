@@ -17,19 +17,19 @@ yarn
 ## Usage
 
 ```sh
-npm start
+yarn start
 ```
 
 ## Build
 
 ```sh
-npm run build
+yarn build
 ```
 
 ## Serve
 
 ```sh
-npm run serve
+yarn serve
 ```
 
 ## Author
