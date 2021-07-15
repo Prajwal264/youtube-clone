@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> A Next.js application used to collect and display survey info.
+> A Next.js application used to collect and display youtube data info.
 
 ## Install
 
