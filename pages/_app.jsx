@@ -1,5 +1,7 @@
 import { Provider } from 'next-auth/client';
 import PropTypes from 'prop-types';
+import Layout from '../components/Layout';
+import 'antd/dist/antd.css';
 
 // Use the <Provider> to improve performance and allow components that call
 // `useSession()` anywhere in your application to access the `session` object.
@@ -25,7 +27,9 @@ export default function App({ Component, pageProps }) {
       }}
       session={pageProps.session}
     >
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
     </Provider>
   );
 }

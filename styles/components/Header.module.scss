@@ -1,0 +1,21 @@
+.header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  .headerInnerWrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .leftSection {
+      display: flex;
+      align-items: center;
+      .hamburger {
+        margin-right: 28px;
+      }
+      .icon {
+        
+      }
+    }
+  }
+}
