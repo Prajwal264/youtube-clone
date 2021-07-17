@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Header from './Header';
+import NavigationDrawer from './NavigationDrawer';
 
 /**
  *
@@ -11,6 +12,7 @@ function Layout({ children }) {
   return (
     <>
       <Header />
+      <NavigationDrawer />
       {children}
     </>
   );

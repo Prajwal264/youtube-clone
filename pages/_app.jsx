@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import Layout from '../components/Layout';
 import 'antd/dist/antd.css';
 import '../styles/global/_main.scss';
+import LayoutContextProvider from '../context/LayoutContext';
 
 // Use the <Provider> to improve performance and allow components that call
 // `useSession()` anywhere in your application to access the `session` object.
@@ -28,9 +29,11 @@ export default function App({ Component, pageProps }) {
       }}
       session={pageProps.session}
     >
-      <Layout>
-        <Component {...pageProps} />
-      </Layout>
+      <LayoutContextProvider>
+        <Layout>
+          <Component {...pageProps} />
+        </Layout>
+      </LayoutContextProvider>
     </Provider>
   );
 }
