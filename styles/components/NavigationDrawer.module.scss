@@ -1,0 +1,50 @@
+.drawer {
+  :global(.ant-drawer-content-wrapper) {
+    :global(.ant-drawer-content) {
+      :global(.ant-drawer-wrapper-body) {
+        :global(.ant-drawer-header) {
+          padding: 0 24px;
+          border-bottom: 1px solid rgba(2, 2, 2, 0.1); 
+        }
+        :global(.ant-drawer-body) {
+          ul {
+            list-style: none;
+            li {
+              display: flex;
+              align-items: center;
+              margin-bottom: 24px;
+              svg {
+                width: 20px;
+                height: 18px;
+                margin-right: 12px;
+              }
+              p {
+                font-family: Mulish;
+                font-size: 16px;
+                color: #898989;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.drawerTitle {
+  display: flex;
+  align-items: center;
+  .hamburger {
+    margin-right: 16px;
+    width: 20px;
+    height: 17px;
+    cursor: pointer;
+  }
+  .logo {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    img {
+      width: 120px;
+    }
+  }
+}
